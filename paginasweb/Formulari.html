@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<!--
+    comentaris externs
+-->
+<html lang="en">
+    <head>
+        <title>Videojuegos</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <form action="form.html" method="get" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Información Basica</legend>
+                <h2></h2>
+                <label for="id_text">Tu nombre y apellido:</label>
+                <input type="text" id="id_text" name="n_text" value="Default text" placeholder="Input text" required/>
+                <h2></h2>
+                <label for="id_number">Tu edad:</label>
+                <input type="number" id="id_number" name="n_number" value="0"/>
+                <h2>email</h2>
+                <label for="id_email">Tu correo:</label>
+                <input type="email" id="id_email" name="n_email" value="default@default"/>
+                <h2>date</h2>
+                <label for="id_date">Tu fecha de nacimiento:</label>
+                <input type="date" id="id_date" name="n_date" value="2017-12-31"/>
+                <h2>select</h2>
+                <label for="id_select">Select option:</label>
+                <select id="id_select" name="n_select">
+                    <option value="default" selected>Default text</option>
+                    <option value="a">adenine</option>
+                    <option value="c">cytosine</option>
+                    <option value="g">guanine</option>
+                    <option value="t">thymine</option>
+                </select>
+ 
+                <h2>select multiple</h2>
+                <label for="id_multiselect">Select multiple options:</label>
+                <select multiple id="id_multiselect" name="n_multiselect[]">
+                    <option value="a" selected="selected">adenine</option>
+                    <option value="c" selected="selected">cytosine</option>
+                    <option value="g">guanine</option>
+                    <option value="t">thymine</option>
+                </select>

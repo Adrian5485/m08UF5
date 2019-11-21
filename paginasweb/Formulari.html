@@ -5,41 +5,48 @@
 -->
 <html lang="en">
     <head>
-        <title>Videojuegos</title>
+        <title>Currículum</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
         <form action="form.html" method="get" enctype="multipart/form-data">
             <fieldset>
-                <legend>Información Basica</legend>
-                <h2></h2>
-                <label for="id_text">Tu nombre y apellido:</label>
-                <input type="text" id="id_text" name="n_text" value="Default text" placeholder="Input text" required/>
-                <h2></h2>
-                <label for="id_number">Tu edad:</label>
+                <legend>Currículum</legend>
+                <h2>Información basica</h2>
+                <label for="id_text">Nombre y Apellidos:</label>
+                <input type="text" id="id_text" name="n_text" value="" placeholder="Input text" required/>
+                <label for="id_number">Edad:</label>
                 <input type="number" id="id_number" name="n_number" value="0"/>
-                <h2>email</h2>
-                <label for="id_email">Tu correo:</label>
+                <label for="id_email">Correo:</label>
                 <input type="email" id="id_email" name="n_email" value="default@default"/>
-                <h2>date</h2>
-                <label for="id_date">Tu fecha de nacimiento:</label>
+                <label for="id_date">Fecha de nacimiento:</label>
                 <input type="date" id="id_date" name="n_date" value="2017-12-31"/>
-                <h2>select</h2>
-                <label for="id_select">Select option:</label>
-                <select id="id_select" name="n_select">
-                    <option value="default" selected>Default text</option>
-                    <option value="a">adenine</option>
-                    <option value="c">cytosine</option>
-                    <option value="g">guanine</option>
-                    <option value="t">thymine</option>
-                </select>
- 
-                <h2>select multiple</h2>
-                <label for="id_multiselect">Select multiple options:</label>
+            </fieldset>
+            <fieldset>
+                <legend>Nacionalidad</legend>
+                <input type="radio" id="id_radio1" name="n_radio" value="a" checked/>Española
+                <input type="radio" id="id_radio2" name="n_radio" value="c"/>Comunitario(UE)
+                <input type="radio" id="id_radio3" name="n_radio" value="g"/>No Comunitario
+            </fieldset>    
+            <fieldset>
+                <legend>Estudios</legend>
                 <select multiple id="id_multiselect" name="n_multiselect[]">
-                    <option value="a" selected="selected">adenine</option>
-                    <option value="c" selected="selected">cytosine</option>
-                    <option value="g">guanine</option>
-                    <option value="t">thymine</option>
+                        <option value="a" selected="selected">Educación primaria</option>
+                        <option value="c" selected="selected">ESO</option>
+                        <option value="g">Bachillerato</option>
+                        <option value="t">Estudios universitarios</option>
+                </select>
+            </fieldset>    
+            <fieldset>
+                <legend>Idiomas</legend>
+                <input type="radio" id="id_radio1" name="n_radio" value="a" checked/>Catalán
+                <input type="radio" id="id_radio2" name="n_radio" value="c"/>Castellano
+                <input type="radio" id="id_radio3" name="n_radio" value="g"/>Inglés
+                <input type="radio" id="id_radio4" name="n_radio" value="t"/>Chino
+            </fieldset> 
+            <fieldset>
+                    <input type="submit" id="id_submit" name="n_submit" value="Enviar"/>
+                    <button id="id_button" name="n_button" value="Cancelar" onclick="alert('javascript'); return false;">Cancelar</button>
+                </fieldset>    
                 </select>
